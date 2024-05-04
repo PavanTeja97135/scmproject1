@@ -3,9 +3,9 @@ import { Route, Routes, Link, useNavigate } from 'react-router-dom';
 import './student.css'
 import StudentHome from './StudentHome';
 import StudentProfile from './StudentProfile';
-import ViewResults from './ViewResults';
+
 import ViewCourses from './ViewCourses';
-import ViewAttendance from './ViewAttendance';
+
 import ViewAssignments from './ViewAssignments';
 import ChangeStudentPwd from './ChangeStudentPWD';
 import CourseRegister from './CourseRegister';
@@ -46,8 +46,7 @@ export default function StudentNavBar() {
 
             <div className="dropdown-content">
             <Link to="/viewcourses">View Assigned Courses</Link>
-            <Link to="/viewresult">Results</Link>
-            <Link to="/viewattendance">Attendance</Link>
+            
             <Link to="/viewassignments">Assignments</Link>
             <Link to="/courseregister">CourseRegistration</Link>
             
@@ -65,8 +64,7 @@ export default function StudentNavBar() {
          <Route path="/studenthome" element={<StudentHome/>} exact/>
          <Route path="/studentprofile" element={<StudentProfile/>} exact/>
          <Route path="/viewcourses" element={<ViewCourses/>} exact/>
-         <Route path="/viewresult" element={<ViewResults/>} exact/>
-         <Route path="/viewattendance" element={<ViewAttendance/>} exact/>
+         
          <Route path="/viewassignments" element={<ViewAssignments/>} exact/>
          <Route path="/changestudentpwd" element={<ChangeStudentPwd/>}exact/>
          <Route path="/courseregister" element={<CourseRegister/>}exact/>

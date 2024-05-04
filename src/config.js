@@ -1,6 +1,6 @@
 const config = 
 {
-    url : 'http://localhost:2005'
+    url : 'https://backend1-renp.onrender.com'
 };
 
 export default config;
